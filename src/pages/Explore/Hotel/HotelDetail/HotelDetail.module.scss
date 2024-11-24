@@ -1,0 +1,70 @@
+.hotel-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  .hotel-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .hotel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .hotel-location {
+    font-size: 1.2rem;
+    color: #777;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .hotel-info {
+    font-size: 1rem;
+    line-height: 1.5;
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    strong {
+      color: #cf3339;
+    }
+  }
+
+  .hotel-description {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .contact-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .contact-button {
+    background-color: #cf3339;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #a82a2f;
+    }
+  }
+}

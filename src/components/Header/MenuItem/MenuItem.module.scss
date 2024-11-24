@@ -1,0 +1,74 @@
+.menu-item {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .nav-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    &:hover {
+      color: var(--primary) !important;
+    }
+    .nav-item-icon {
+      margin-left: 8px;
+      font-size: 12px;
+    }
+  }
+
+  .sub-nav {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #fff;
+    padding: 5px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 160px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    .menu-item {
+      padding: 0;
+      margin: 0;
+      .nav-item {
+        padding: 8px 12px;
+        font-size: 13px;
+        color: #333;
+        &:hover {
+          background-color: #f0f0f0;
+          color: var(--primary);
+        }
+        .nav-item-icon {
+          transform: rotateZ(-90deg);
+        }
+      }
+    }
+  }
+
+  &:hover > .sub-nav {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  //Menu cấp 1 thì ở dưới
+  & > .sub-nav {
+    left: 0;
+    top: 100%;
+  }
+  // Từ submenu cấp 2 trở đi thì bên phải thay vì bên dưới
+  .sub-nav .menu-item:hover > .sub-nav {
+    left: 100%;
+    top: 0;
+  }
+}

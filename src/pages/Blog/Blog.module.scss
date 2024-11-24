@@ -1,0 +1,51 @@
+.blog-page {
+  width: 100%;
+  padding: 20px 64px;
+  height: fit-content;
+}
+.blog-nav-item-container {
+  top: 65px;
+  display: inline-flex;
+  width: 100%;
+  align-items: baseline;
+  background-color: white;
+}
+.blog-nav-item {
+  font-size: 20px;
+  color: #030a30;
+  margin-right: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  &.active {
+    background-color: #cf3333;
+    color: white;
+  }
+  &:not(.active):hover {
+    color: #cf3333;
+  }
+  &:first-child {
+    font-size: 60px;
+  }
+  &:first-child:hover {
+    color: #030a30;
+  }
+}
+.blog-content {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+}
+.blog-other-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}

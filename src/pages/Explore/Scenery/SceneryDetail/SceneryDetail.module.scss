@@ -1,0 +1,73 @@
+.scenery-detail {
+}
+.slide {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.city-name {
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.content {
+  padding: 20px;
+  max-width: 800px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0 auto;
+}
+.description {
+  font-size: 28px;
+  font-style: italic;
+  background: linear-gradient(45deg, #ff5185, #ffab4a, #cf3339);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0;
+}
+.section {
+  & > h2 {
+    margin-bottom: 20px;
+  }
+
+  & > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+
+    li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+}
+.introduce {
+  margin: 20px 0;
+  text-align: justify;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  & .gallery-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+.gallery-title {
+  font-size: 14px;
+  text-align: center;
+  color: #aaa;
+  font-style: italic;
+  margin: 20px 0;
+}

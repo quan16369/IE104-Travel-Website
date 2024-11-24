@@ -1,0 +1,91 @@
+.tours-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+.tours-page {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+}
+.tours-all {
+  padding: 28px;
+}
+.tours-all-area {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+}
+.tours-all-area > div {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 4px 0;
+}
+.tours-all-load-more {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.tours-all-load-more > button {
+  padding: 8px 16px;
+  text-transform: uppercase;
+  border: #cf3339 2px solid;
+  font-weight: 600;
+  border-radius: 16px;
+  background-color: #cf3339;
+  color: #fff;
+  cursor: pointer;
+}
+.tours-all-load-more > button:hover {
+  color: #cf3339;
+  background-color: #fff;
+}
+.tours-filter-container {
+  width: 30%;
+  margin: 20px;
+  padding: 28px;
+  border: 4px solid rgb(229 231 238);
+  height: fit-content;
+}
+.tours-filter-clearall {
+  color: #cf3339;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-bottom: 16px;
+  font-weight: 600;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.tours-filter-header {
+  border: none;
+  cursor: pointer;
+  padding: 16px 0;
+  width: 100%;
+  background: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: space-between;
+  border-bottom: 1px #bdbdbd solid;
+}
+.tours-filter-content {
+  display: none;
+  padding: 16px 0;
+  border-top: none;
+
+  & > input {
+    cursor: pointer;
+  }
+  & > label {
+    cursor: pointer;
+    margin-left: 8px;
+  }
+}

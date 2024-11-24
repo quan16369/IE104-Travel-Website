@@ -1,0 +1,49 @@
+.return-all-blogs {
+  width: 100%;
+  padding: 32px 32px 0 32px;
+}
+.return-all-blogs > a {
+  color: #cf3339;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.post-page {
+  width: 100%;
+  padding: 32px 20px;
+  display: flex;
+}
+
+.post-news {
+  width: 70%;
+  padding: 16px;
+
+  & > h1 {
+    font-size: 44px;
+    margin-bottom: 16px;
+  }
+  &-auth {
+    font-style: italic;
+    font-size: 14px;
+  }
+  &-content {
+    text-align: justify;
+    margin: 32px 0;
+    color: #030a30;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.post-news-rcm {
+  width: 30%;
+  padding: 16px;
+  &-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    & > a {
+      width: 100%;
+    }
+  }
+}

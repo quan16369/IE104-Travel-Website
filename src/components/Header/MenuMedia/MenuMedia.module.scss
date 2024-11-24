@@ -1,0 +1,15 @@
+.nav-media-item {
+  cursor: pointer;
+  color: #000;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-media-icon {
+  line-height: 48px;
+  margin: 0 8px;
+  &:hover {
+    color: var(--primary);
+  }
+}

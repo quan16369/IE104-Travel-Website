@@ -1,0 +1,22 @@
+.divider-container {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  height: auto;
+}
+.divider-line {
+  width: 48%;
+  height: 1px;
+  background-color: #ddd;
+}
+.divider-icon {
+  width: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #303133;
+  border-radius: 100px;
+  height: 3em;
+  margin: 32px 0;
+}

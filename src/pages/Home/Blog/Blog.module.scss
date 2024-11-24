@@ -1,0 +1,35 @@
+.blog-container {
+  background-image: url("https://www.oars.com/wp-content/uploads/2022/11/topo-river-alt.svg");
+  width: 100%;
+  padding: 32px;
+}
+.blog-link {
+  display: flex;
+  flex-direction: column;
+}
+.blog-button {
+  padding: 12px 20px;
+  border-radius: 100px;
+  background-color: #cf3339;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  margin: 16px 0;
+  width: fit-content;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.blog-item-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.blog-item-container > a {
+  width: 30%;
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+  padding: 8px;
+}

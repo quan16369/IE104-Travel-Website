@@ -1,0 +1,38 @@
+.find-container {
+  width: 100%;
+  padding: 36px 0;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px #ddd solid;
+}
+.find-content {
+  display: flex;
+  flex-direction: column;
+  &:hover .find-title {
+    color: #cf3339;
+  }
+  & > button {
+    height: 50px;
+    width: 50px;
+    border-radius: 900px;
+    background-color: #cf3339;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+  }
+  & > button:hover {
+    opacity: 0.9;
+  }
+}
+.find-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.find-dropdown {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

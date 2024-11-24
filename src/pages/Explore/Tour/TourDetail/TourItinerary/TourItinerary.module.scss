@@ -1,0 +1,23 @@
+.details-itinerary-day {
+  width: 100%;
+  border-bottom: 1px solid rgb(178, 185, 205);
+  padding: 16px 8px;
+  & > button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: start;
+    font-weight: 600;
+  }
+  &-icon {
+    font-size: 16px;
+  }
+  &-details {
+    display: block;
+    padding: 16px 0;
+    text-align: justify;
+    animation-name: fadeIn 1s ease;
+  }
+}

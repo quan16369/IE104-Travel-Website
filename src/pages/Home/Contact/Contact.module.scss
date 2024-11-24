@@ -1,0 +1,55 @@
+.contact-container {
+  width: 100%;
+  margin: 32px 0;
+}
+.contact-item-container {
+  width: 100%;
+  display: flex;
+  background-color: #030a30;
+}
+.contact-item {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  & h2 {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+}
+.contact-img-container {
+  background-image: url("https://www.oars.com/wp-content/uploads/2023/02/OARS_RequestCatalog_CTA_BG.webp");
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & > img {
+    width: 70%;
+    image-rendering: optimizeQuality;
+  }
+}
+.contact-link {
+  padding: 16px 24px;
+  border-radius: 100px;
+  background-color: #cf3339;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  margin: 16px 0;
+  width: fit-content;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px #2d9da9;
+  }
+  to {
+    text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+  }
+}
